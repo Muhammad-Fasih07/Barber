@@ -20,12 +20,16 @@ document.querySelector('.booking form').addEventListener('submit', (e) => {
     e.target.reset();
 });
 
-// Contact Form submission
-document.querySelector('#contactForm').addEventListener('submit', (e) => {
-    e.preventDefault();
-    alert('Message sent successfully!');
-    e.target.reset();
-});
+// Contact Form submission (Fix: Check if the element exists first)
+const contactForm = document.querySelector('#contactForm');
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('Message sent successfully!');
+        e.target.reset();
+    });
+}
+
 
 // Back to Top Button
 function scrollToTop() {
