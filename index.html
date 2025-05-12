@@ -10,28 +10,26 @@
 </head>
 <body>
     <!-- Header -->
-   <!-- filepath: c:\Users\fasee\OneDrive\Desktop\Barber\index.html -->
-<!-- filepath: c:\Users\fasee\OneDrive\Desktop\Barber\index.html -->
-<header>
-    <div class="header-container">
-        <div class="logo">
-            <img src="images/sangham_logo-removebg.png" alt="Logo" class="logo-image">
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/sangham_logo-removebg.png" alt="Logo" class="logo-image">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="cta-btn">Book Now</button>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <button class="cta-btn">Book Now</button>
-        <div class="menu-toggle">
-            <i class="fas fa-bars"></i>
-        </div>
-    </div>
-</header>
+    </header>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
@@ -42,7 +40,7 @@
                 <button class="hero-btn">Book Now</button>
                 <div class="hero-stats">
                     <div class="stat"><p>Consult Online!</p></div>
-                    <div class="stat"><p>10+ Years Experience</p></div>
+                    <div class="stat"><p>15+ Years Experience</p></div>
                     <div class="stat"><p>500+ Monthly Customers</p></div>
                 </div>
             </div>
@@ -63,7 +61,7 @@
                 <div class="card-image"><img src="images/7.jpg" alt="Hair & Beard"></div>
                 <div class="card-content">
                     <h3>Hair & Beard</h3>
-                    <p>Our barbers help you get a unique look of any complexity.</p>
+                    <p>Our barbers help you get a unique look of any complexity. Home service available.</p>
                     <button class="book-now">Book Now</button>
                 </div>
             </div>
@@ -71,7 +69,7 @@
                 <div class="card-image"><img src="images/shave.jpg" alt="Shaving"></div>
                 <div class="card-content">
                     <h3>Shaving</h3>
-                    <p>Shaving with thick foam and a soft massage.</p>
+                    <p>Shaving with thick foam and a soft massage. Home service available.</p>
                     <button class="book-now">Book Now</button>
                 </div>
             </div>
@@ -79,7 +77,7 @@
                 <div class="card-image"><img src="images/trim.jpg" alt="Trimming"></div>
                 <div class="card-content">
                     <h3>Trimming</h3>
-                    <p>Best for short hair; quick & effective, no scissors.</p>
+                    <p>Best for short hair; quick & effective, no scissors. Home service available.</p>
                     <button class="book-now">Book Now</button>
                 </div>
             </div>
@@ -98,10 +96,12 @@
     <section id="pricing" class="pricing">
         <h2>Our Pricing</h2>
         <div class="pricing-cards">
-            <div class="price-card"><h3>Hair & Beard</h3><p>Rs. 700</p></div>
+            <div class="price-card"><h3>Hair Cut</h3><p>Rs. 300</p></div>
             <div class="price-card"><h3>Shaving</h3><p>Rs. 300</p></div>
-            <div class="price-card"><h3>Trimming</h3><p>Rs. 250</p></div>
-            <div class="price-card"><h3>Style & Care</h3><p>Rs. 2000</p></div>
+            <div class="price-card"><h3>Beard Trimming</h3><p>Rs. 250</p></div>
+            <div class="price-card"><h3>Home Service (Hair Cut, Shaving, Beard Trimming)</h3><p>Rs. 1000</p></div>
+            <div class="price-card"><h3>Ficial</h3><p>Rs. 3000</p></div>
+            <div class="price-card"><h3>Dulha MakeUp</h3><p>Rs. 10000</p></div>
         </div>
     </section>
 
@@ -137,59 +137,57 @@
         </div>
     </section>
 
-    <!-- filepath: c:\Users\fasee\OneDrive\Desktop\Barber\index.html -->
-<section id="book" class="booking">
-    <div class="booking-container">
-        <h2>Book Your Appointment</h2>
-        <form id="bookingForm">
-            <div class="form-group">
-                <input type="text" id="name" placeholder=" " required>
-                <label for="name">Your Name</label>
-            </div>
-            <div class="form-group">
-                <input type="tel" id="phone" placeholder=" " required>
-                <label for="phone">Phone Number</label>
-            </div>
-            <div class="form-group">
-                <input type="email" id="email" placeholder=" " required>
-                <label for="email">Email</label>
-            </div>
-            <div class="form-group">
-                <input type="datetime-local" id="datetime" placeholder=" " required>
-                <label for="datetime">Preferred Date & Time</label>
-            </div>
-            <div class="form-group">
-                <select id="service" required>
-                    <option value="" disabled selected></option>
-                    <option value="hair-beard">Hair & Beard</option>
-                    <option value="shaving">Shaving</option>
-                    <option value="trimming">Trimming</option>
-                    <option value="style-care">Style & Care</option>
-                </select>
-                <label for="service">Select Service</label>
-            </div>
-            <button type="button" id="bookNowButton">Book Now</button>
-        </form>
-    </div>
-</section>
+    <!-- Booking Section -->
+    <section id="book" class="booking">
+        <div class="booking-container">
+            <h2>Book Your Appointment</h2>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder=" " required>
+                    <label for="name">Your Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" placeholder=" " required>
+                    <label for="phone">Phone Number</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder=" " required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                    <input type="datetime-local" id="datetime" placeholder=" " required>
+                    <label for="datetime">Preferred Date & Time</label>
+                </div>
+                <div class="form-group">
+                    <select id="service" required>
+                        <option value="" disabled selected></option>
+                        <option value="hair-beard">Hair & Beard</option>
+                        <option value="shaving">Shaving</option>
+                        <option value="trimming">Trimming</option>
+                        <option value="style-care">Style & Care</option>
+                        <option value="home-service">Home Service (Hair Cut, Shaving, Beard Trimming)</option>
+                    </select>
+                    <label for="service">Select Service</label>
+                </div>
+                <button type="button" id="bookNowButton">Book Now</button>
+            </form>
+        </div>
+    </section>
 
     <!-- Footer with Integrated Contact Us -->
     <footer id="contact">
         <div class="footer-content">
-            <!-- Sangham Beauty Salon, Menu, and Info (Moved to Left) -->
-            <!-- filepath: c:\Users\fasee\OneDrive\Desktop\Barber\index.html -->
-<!-- filepath: c:\Users\fasee\OneDrive\Desktop\Barber\index.html -->
-<div class="footer-left">
-    <div class="logo">
-        <img src="/images/sangham_logo-removebg.png" alt="logo" class="logo-image">
-    </div>
-    <p>"Master Cuts & Styles" is Waiting!</p>
-    <div class="socials">
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="https://wa.me/+923465454482?text=Hello%20Sangham%20Beauty%20Salon" target="_blank"><i class="fab fa-whatsapp"></i></a>
-    </div>
-</div>
+            <div class="footer-left">
+                <div class="logo">
+                    <img src="/images/sangham_logo-removebg.png" alt="logo" class="logo-image">
+                </div>
+                <p>"Master Cuts & Styles" is Waiting!</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="https://wa.me/+923465454482?text=Hello%20Sangham%20Beauty%20Salon" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
             <div class="footer-center">
                 <h4>Menu</h4>
                 <a href="#">Services</a>
@@ -201,35 +199,14 @@
                 <a href="#">How to reach</a>
                 <a href="#">Appointment</a>
             </div>
-
-            <!-- Contact Info and Form (Moved to Right) -->
             <div class="footer-contact-info">
                 <h4>Contact Us</h4>
                 <h5>Get in Touch</h5>
                 <p><strong>Address:</strong> Peshawar Road Pir-wadhai-Mor Dhoke Mustaqeem Road next to Anwar-ul-Haq Clinic.</p>
                 <p><strong>Phone:</strong> +923465454482</p>
                 <p><strong>Email:</strong> jawadrehmat64@gmail.com</p>
-                <p><strong>Hours:</strong> Mon-Sun: 9AM-6PM</p>
+                <p><strong>Hours:</strong> Mon-Sun: 9AM-9PM</p>
             </div>
-           <!-- <div class="footer-contact-form">
-                <h5>Send Us a Message</h5>
-                <form id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="contactName" placeholder=" " required>
-                        <label for="contactName">Name</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="contactEmail" placeholder=" " required>
-                        <label for="contactEmail">Email</label>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" placeholder=" " rows="4" required></textarea>
-                        <label for="message">Message</label>
-                    </div>
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>-->
-            <!-- Newsletter (Remains on Right) -->
             <div class="footer-right">
                 <h4>Newsletter</h4>
                 <p>Subscribe to get the latest news & promotions from Sangham Beauty Salon.</p>
@@ -242,19 +219,15 @@
         </div>
     </footer>
 
-    <!-- filepath: c:\Users\fasee\OneDrive\Desktop\Barber\index.html -->
-<!-- Buttons Container -->
-<div class="buttons-container">
-    <!-- Back to Top Button -->
-    <button class="back-to-top" onclick="scrollToTop()">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- WhatsApp Chat Button -->
-    <a href="https://wa.me/923465454482?text=Hello%20Sangham%20Beauty%20Salon" target="_blank" class="whatsapp-chat">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-</div>
+    <!-- Buttons Container -->
+    <div class="buttons-container">
+        <button class="back-to-top" onclick="scrollToTop()">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <a href="https://wa.me/923465454482?text=Hello%20Sangham%20Beauty%20Salon" target="_blank" class="whatsapp-chat">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
 
     <script src="script.js"></script>
 </body>
