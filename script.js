@@ -102,3 +102,46 @@ document.getElementById('bookNowButton').addEventListener('click', function() {
     // Auto-response message
     alert('Your appointment request has been sent. We will confirm your appointment shortly.');
 });
+
+// Booking Date/Time Validation
+document.addEventListener('DOMContentLoaded', function () {
+    const datetimeInput = document.getElementById('datetime');
+    if (!datetimeInput) return;
+
+    function pad(n) { return n < 10 ? '0' + n : n; }
+
+    function setMinDateTime() {
+        const now = new Date();
+        now.setMinutes(now.getMinutes() + 30); // 30 minutes ahead
+        const year = now.getFullYear();
+        const month = pad(now.getMonth() + 1);
+        const day = pad(now.getDate());
+        const hour = pad(now.getHours());
+        const minute = pad(now.getMinutes());
+        datetimeInput.min = `${year}-${month}-${day}T${hour}:${minute}`;
+    }
+
+    setMinDateTime();
+
+    datetimeInput.addEventListener('input', function () {
+        const selected = new Date(this.value);
+        const now = new Date();
+        now.setMinutes(now.getMinutes() + 30);
+
+        // Check if selected is at least 30 min ahead
+        if (selected < now) {
+            alert('Please select a time at least 30 minutes ahead from now.');
+            setMinDateTime();
+            this.value = '';
+            return;
+        }
+
+        // Check if time is between 9am and 9pm
+        const hour = selected.getHours();
+        if (hour < 9 || hour >= 21) {
+            alert('Please select a time between 9:00 AM and 9:00 PM.');
+            this.value = '';
+            return;
+        }
+    });
+});

@@ -39,9 +39,9 @@
                 <p>Experience the ultimate grooming services.</p>
                 <button class="hero-btn">Book Now</button>
                 <div class="hero-stats">
-                    <div class="stat"><p>Consult Online!</p></div>
-                    <div class="stat"><p>15+ Years Experience</p></div>
-                    <div class="stat"><p>500+ Monthly Customers</p></div>
+                    <div class="stat"><span>Consult Online!</span></div>
+                    <div class="stat"><span>15+ Years Experience</span></div>
+                    <div class="stat"><span>500+ Monthly Customers</span></div>
                 </div>
             </div>
             <div class="hero-video">
@@ -100,7 +100,7 @@
             <div class="price-card"><h3>Shaving</h3><p>Rs. 300</p></div>
             <div class="price-card"><h3>Beard Trimming</h3><p>Rs. 250</p></div>
             <div class="price-card"><h3>Home Service (Hair Cut, Shaving, Beard Trimming)</h3><p>Rs. 1000</p></div>
-            <div class="price-card"><h3>Ficial</h3><p>Rs. 3000</p></div>
+            <div class="price-card"><h3>Facial</h3><p>Rs. 3000</p></div>
             <div class="price-card"><h3>Dulha MakeUp</h3><p>Rs. 10000</p></div>
         </div>
     </section>
@@ -108,21 +108,34 @@
     <!-- Team Section -->
     <section id="team" class="team">
         <h2>Meet Our Barbers</h2>
+        <div class="team-intro">
+            <p class="team-intro-text">
+                At Sangham Beauty Salon, our barbers are true artists, dedicated to delivering the perfect cut, shave, and style for every client.<br>
+                <span class="highlight-intro">Get to know the expert behind our signature looks!</span>
+            </p>
+        </div>
         <div class="team-cards">
-            <div class="team-card">
-                <img src="https://via.placeholder.com/200" alt="Barber 1">
-                <h3>John Doe</h3>
-                <p>Master Barber with 10+ years of experience.</p>
-            </div>
-            <div class="team-card">
-                <img src="https://via.placeholder.com/200" alt="Barber 2">
-                <h3>Mark Smith</h3>
-                <p>Specialist in fades and modern cuts.</p>
-            </div>
-            <div class="team-card">
-                <img src="https://via.placeholder.com/200" alt="Barber 3">
-                <h3>James Brown</h3>
-                <p>Expert in beard styling and grooming.</p>
+            <div class="team-card enhanced dark-theme">
+                <div class="team-photo">
+                    <img src="images/Barber img.jpeg" alt="Barber">
+                </div>
+                <div class="team-info">
+                    <h3 class="barber-name">Jawad Rehmat</h3>
+                    <p class="barber-title">
+                        <strong>Master Barber & Style Consultant</strong>
+                    </p>
+                    <p class="barber-bio">
+                        With over <strong>15 years</strong> of experience, Jawad is renowned for his precision, creativity, and passion for modern and classic barbering.<br>
+                        He specializes in <strong>fades, beard sculpting, and contemporary styles</strong>, ensuring every client leaves looking and feeling their best.<br>
+                        <em>"Every haircut is a work of art. My goal is to help you express your unique style."</em>
+                    </p>
+                    <ul class="barber-highlights">
+                        <li>✂️ <span>Best fade specialist in Town</span></li>
+                        <li>🧔 <span>Beard styling & care expert</span></li>
+                        <li>💈 <span>Personalized consultations</span></li>
+                        
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -131,9 +144,9 @@
     <section id="testimonials" class="testimonials">
         <h2>What Our Clients Say</h2>
         <div class="testimonial-carousel">
-            <div class="testimonial"><p>"Best haircut I've ever had! The team is amazing."</p><h4>- Alex R.</h4></div>
-            <div class="testimonial"><p>"Professional and friendly. Highly recommend!"</p><h4>- Mike T.</h4></div>
-            <div class="testimonial"><p>"A top-notch experience every time."</p><h4>- Sarah L.</h4></div>
+            <div class="testimonial"><p>"Best haircut I've ever had! The team is amazing."</p><h4>- Ahmed Ali.</h4></div>
+            <div class="testimonial"><p>"Professional and friendly. Highly recommended!"</p><h4>- Farhan Khan.</h4></div>
+            <div class="testimonial"><p>"A top-notch experience on my every visit."</p><h4>- Muhammad Touqeer.</h4></div>
         </div>
     </section>
 
@@ -163,8 +176,10 @@
                         <option value="" disabled selected></option>
                         <option value="hair-beard">Hair & Beard</option>
                         <option value="shaving">Shaving</option>
-                        <option value="trimming">Trimming</option>
+                        <option value="Hair-trimming">Hair Trimming</option>
                         <option value="style-care">Style & Care</option>
+                        <option value="Facial">Facial</option>
+                        <option value="Dulha-MakeUp">Dulha MakeUp</option>
                         <option value="home-service">Home Service (Hair Cut, Shaving, Beard Trimming)</option>
                     </select>
                     <label for="service">Select Service</label>
@@ -221,12 +236,12 @@
 
     <!-- Buttons Container -->
     <div class="buttons-container">
-        <button class="back-to-top" onclick="scrollToTop()">
-            <i class="fas fa-arrow-up"></i>
-        </button>
         <a href="https://wa.me/923465454482?text=Hello%20Sangham%20Beauty%20Salon" target="_blank" class="whatsapp-chat">
             <i class="fab fa-whatsapp"></i>
         </a>
+        <button class="back-to-top" onclick="scrollToTop()">
+            <i class="fas fa-arrow-up"></i>
+        </button>
     </div>
 
     <script src="script.js"></script>
